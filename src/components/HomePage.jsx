@@ -1,8 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const HomePage = () => {
   return (
     <div>
+        <Navbar/>
         <div className="container">
           <div className="row">
             <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
