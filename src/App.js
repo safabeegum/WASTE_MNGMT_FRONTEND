@@ -4,13 +4,15 @@ import UserSignUp from './components/UserSignUp';
 import UserSignIn from './components/UserSignIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserHome from './components/UserHome';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <BrowserRouter>
 
     <Routes>
-      <Route path='/' element={<UserSignIn/>}/>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/usersignin' element={<UserSignIn/>}/>
       <Route path='/usersignup' element={<UserSignUp/>}/>
       <Route path='/userhome' element={<UserHome/>}/>
 
