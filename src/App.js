@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserHome from './components/UserHome';
 import HomePage from './components/HomePage';
 import AdminSignIn from './components/AdminSignIn';
+import CollectSignIn from './components/CollectSignIn';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/adminsignin' element={<AdminSignIn/>}/>
+      <Route path='/collectsignin' element={<CollectSignIn/>}/>
       <Route path='/usersignin' element={<UserSignIn/>}/>
       <Route path='/usersignup' element={<UserSignUp/>}/>
       <Route path='/userhome' element={<UserHome/>}/>
