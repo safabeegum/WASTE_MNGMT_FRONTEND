@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Nav from './Nav'
 
 const UserSignUp = () => {
 
@@ -90,9 +91,18 @@ const UserSignUp = () => {
 
   return (
     <div>
-        <div className="container">
-            <div className="row">
-                <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <Nav/>
+            <div className="container">
+          <div className="row">
+            <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
+            <div class="card border-light mb-3">
+            <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7965.jpg?t=st=1725445489~exp=1725449089~hmac=07e4cedd0a99d554cb4e1ee8e9a81188156264c7d51aaed6d9b0915f8c457978&w=740" class="card-img-top" alt="..."></img>
+            </div>
+            </div>
+
+            <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
+            <div class="card border-light mb-3">
+            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">FIRST NAME</label>
@@ -175,14 +185,18 @@ const UserSignUp = () => {
                         </div>
 
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <a href="/" className="btn btn-secondary">GO BACK</a>
+                            <a href="/usersignin" className="btn btn-secondary">LOGIN PAGE</a>
                         </div>
 
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          
+        
   )
 }
 

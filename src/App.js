@@ -8,6 +8,7 @@ import HomePage from './components/HomePage';
 import AdminSignIn from './components/AdminSignIn';
 import CollectSignIn from './components/CollectSignIn';
 import AdminHome from './components/AdminHome';
+import CollectHome from './components/CollectHome';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
 
     <Routes>
       <Route path='/' element={<HomePage/>}/>
-      <Route path='/adminhome' element={<AdminHome/>}/>
       <Route path='/adminsignin' element={<AdminSignIn/>}/>
+      <Route path='/adminhome' element={<AdminHome/>}/>
       <Route path='/collectsignin' element={<CollectSignIn/>}/>
+      <Route path='/collecthome' element={<CollectHome/>}/>
       <Route path='/usersignin' element={<UserSignIn/>}/>
       <Route path='/usersignup' element={<UserSignUp/>}/>
       <Route path='/userhome' element={<UserHome/>}/>

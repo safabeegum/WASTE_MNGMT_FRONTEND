@@ -2,59 +2,80 @@ import React from 'react'
 
 const UserHome = () => {
   return (
-    <div>
         <div className="container">
-        <div className="row g-4">
-      <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-          <div class="card border-light">
-                  <img height="300px"  src="https://img.freepik.com/free-vector/recycle-colorful-geometric-gradient-logo-vector_343694-1249.jpg?t=st=1725411534~exp=1725415134~hmac=aacf4324d69d37686b39e2446f6f7ab49cfd25e1072955de96d86af9a4e0ee33&w=740" class="card-img-top" alt="..."></img>
-                  <div class="card-body">
-                  <h5 class="card-title text-center">WASTE PICKUP REQUEST</h5>
-                  <div class="text-center">
-                  <a href="/" className="btn btn-secondary">CLICK</a>
-                  </div>
-                  </div>
-                  </div>
-          </div>
-
-          <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-          <div class="card border-light">
-                  <img height="300px"  src="https://img.freepik.com/free-vector/recycle-colorful-geometric-gradient-logo-vector_343694-1249.jpg?t=st=1725411534~exp=1725415134~hmac=aacf4324d69d37686b39e2446f6f7ab49cfd25e1072955de96d86af9a4e0ee33&w=740" class="card-img-top" alt="..."></img>
-                  <div class="card-body">
-                  <h5 class="card-title text-center">PAYMENT</h5>
-                  <div class="text-center">
-                  <a href="/" className="btn btn-secondary">CLICK</a>
-                  </div>
-                  </div>
-                  </div>
-          </div>
-
-          <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-          <div class="card border-light">
-                  <img height="300px"  src="https://img.freepik.com/free-vector/recycle-colorful-geometric-gradient-logo-vector_343694-1249.jpg?t=st=1725411534~exp=1725415134~hmac=aacf4324d69d37686b39e2446f6f7ab49cfd25e1072955de96d86af9a4e0ee33&w=740" class="card-img-top" alt="..."></img>
-                  <div class="card-body">
-                  <h5 class="card-title text-center">RECIEPT</h5>
-                  <div class="text-center">  
-                  <a href="/" className="btn btn-secondary">CLICK</a>
-                  </div>
-                  </div>
-                  </div>
-          </div>
-
-          <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-          <div class="card border-light">
-                  <img height="300px"  src="https://img.freepik.com/free-vector/recycle-colorful-geometric-gradient-logo-vector_343694-1249.jpg?t=st=1725411534~exp=1725415134~hmac=aacf4324d69d37686b39e2446f6f7ab49cfd25e1072955de96d86af9a4e0ee33&w=740" class="card-img-top" alt="..."></img>
-                  <div class="card-body">
-                  <h5 class="card-title text-center">FEEDBACK</h5>
-                  <div class="text-center">
-                  <a href="/" className="btn btn-secondary">CLICK</a>
-                  </div>
-                  </div>
-                  </div>
-          </div>
+        <div className="row">
+            <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div className="card mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="https://img.freepik.com/free-vector/preferences-concept-illustration_114360-1384.jpg?t=st=1725478982~exp=1725482582~hmac=93116ac20878e2441f894c35afce4a4d6d5cde4be7acfb838930d0acf06b3d91&w=740" className="img-fluid rounded-start" alt="..."/>
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                                <br></br><br></br>
+                                <h5 className="card-title">WASTE PICKUP REQUEST</h5>
+                                <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div className="card mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="https://img.freepik.com/free-vector/qr-code-scanning-concept-with-characters-illustrated_23-2148633631.jpg?t=st=1725478854~exp=1725482454~hmac=626ba564f55d42c2bbe1c020722baa49bc54b630448ad53c5c2061fde47f8043&w=740" className="img-fluid rounded-start" alt="..."/>
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                            <br></br><br></br>
+                                <h5 className="card-title">PAYMENT</h5>
+                                <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div className="row">
+            <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div className="card mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="https://img.freepik.com/free-vector/invoice-concept-illustration_114360-2485.jpg?t=st=1725478427~exp=1725482027~hmac=7cc874f74717a2011b51724dfb9288171cfccabf2df7bde6c32b5f1b25734382&w=740" className="img-fluid rounded-start" alt="..."/>
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                            <br></br><br></br>
+                                <h5 className="card-title">INVOICE</h5>
+                                <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div className="card mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                            <img src="https://img.freepik.com/free-vector/medium-feedback-concept-illustrated_23-2148967056.jpg?t=st=1725478691~exp=1725482291~hmac=41443b1e2df0164c5a56bcbbd8ad4fc1cd1f89942e37e27b3a930962bee9666b&w=740" className="img-fluid rounded-start" alt="..."/>
+                        </div>
+                        <div className="col-md-8">
+                            <div className="card-body">
+                            <br></br><br></br>
+                                <h5 className="card-title">FEEDBACK</h5>
+                                <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
+    
   )
 }
 
