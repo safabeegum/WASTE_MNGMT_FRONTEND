@@ -22,8 +22,20 @@ const UserSignIn = () => {
                 console.log(response.data);
                 if (response.data.status === "Incorrect Password") {
                     alert("Incorrect Password");
+                    setInput(
+                        {
+                            email: "", 
+                            password: ""
+                        }
+                    )
                 } else if (response.data.status === "Invalid Email ID") {
                     alert("Incorrect Password or Email ID");
+                    setInput(
+                        {
+                            email: "", 
+                            password: ""
+                        }
+                    )
                 } else {
                     let token = response.data.token;
                     let userId = response.data.userId;
@@ -70,12 +82,16 @@ const UserSignIn = () => {
                 <input type="password" name="password" id="" className="form-control" value={input.password} onChange={inputHandler} />
             </div>
 
-            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="d-grid gap-2">
                 <button onClick={readValues} className="btn btn-success">SIGN IN</button>
             </div>
+            </div>
 
-            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+            <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="d-grid gap-2">
             <a href="/usersignup" className="btn btn-secondary">NEW USER?</a>
+            </div>
             </div>
             </div>
             </div>

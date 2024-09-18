@@ -6,7 +6,7 @@ import Nav from './Nav';
 const AdminSignIn = () => {
     const navigate = useNavigate()
     const [input, setInput] = useState({
-        email: "", 
+        username: "", 
         password: ""
     });
 
@@ -22,8 +22,20 @@ const AdminSignIn = () => {
                 console.log(response.data);
                 if (response.data.status === "Incorrect Password") {
                     alert("Incorrect Password");
-                } else if (response.data.status === "Invalid Email ID") {
-                    alert("Incorrect Password or Email ID");
+                    setInput(
+                        {
+                            username: "", 
+                            password: ""
+                        }
+                    )
+                } else if (response.data.status === "Invalid Username") {
+                    alert("Incorrect Password or Username");
+                    setInput(
+                        {
+                            username: "", 
+                            password: ""
+                        }
+                    )
                 } else {
                     let token = response.data.token;
                     let userId = response.data.userId;
@@ -60,8 +72,8 @@ const AdminSignIn = () => {
             <div className="row g-3">
             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
             <br></br><br></br><br></br><br></br>
-                <label htmlFor="" className="form-label">EMAIL ID</label>
-                <input type="text" className="form-control" name='email' value={input.email} onChange={inputHandler} />
+                <label htmlFor="" className="form-label">USERNAME</label>
+                <input type="text" className="form-control" name='username' value={input.username} onChange={inputHandler} />
             </div>
 
             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
@@ -70,7 +82,9 @@ const AdminSignIn = () => {
             </div>
 
             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+            <div class="d-grid gap-2">
                 <button onClick={readValues} className="btn btn-success">SIGN IN</button>
+            </div>
             </div>
             </div>
             </div>

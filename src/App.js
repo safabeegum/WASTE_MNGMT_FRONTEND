@@ -9,6 +9,7 @@ import AdminSignIn from './components/AdminSignIn';
 import CollectSignIn from './components/CollectSignIn';
 import AdminHome from './components/AdminHome';
 import CollectHome from './components/CollectHome';
+import AddCollector from './components/AddCollector';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/' element={<HomePage/>}/>
       <Route path='/adminsignin' element={<AdminSignIn/>}/>
       <Route path='/adminhome' element={<AdminHome/>}/>
+      <Route path='/addcollector' element={<AddCollector/>}/>
       <Route path='/collectsignin' element={<CollectSignIn/>}/>
       <Route path='/collecthome' element={<CollectHome/>}/>
       <Route path='/usersignin' element={<UserSignIn/>}/>
