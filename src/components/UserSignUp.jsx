@@ -181,13 +181,16 @@ const UserSignUp = () => {
                         </div>
 
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="d-grid gap-2">
                             <button onClick={readValue} className="btn btn-success">SUBMIT</button>
+                        </div>
                         </div>
 
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="d-grid gap-2">
                             <a href="/usersignin" className="btn btn-secondary">LOGIN PAGE</a>
                         </div>
-
+                        </div>
                     </div>
                 </div>
             </div>
