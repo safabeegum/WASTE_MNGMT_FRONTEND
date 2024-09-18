@@ -1,8 +1,10 @@
 import React from 'react'
+import UserNav from './UserNav'
 
 const UserHome = () => {
   return (
         <div className="container">
+            <UserNav/>
         <div className="row">
             <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <div className="card mb-3">
