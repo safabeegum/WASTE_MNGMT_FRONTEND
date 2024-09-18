@@ -1,8 +1,11 @@
 import React from 'react'
+import AdminNav from './AdminNav'
+
 
 const AdminHome = () => {
   return (
         <div className="container">
+            <AdminNav/>
     <div className="row">
         <div className="col col-12 col-sm-12 col-md-6">
             <div className="card mb-3">
