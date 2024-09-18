@@ -1,8 +1,10 @@
 import React from 'react'
+import CollectNav from './CollectNav'
 
 const CollectHome = () => {
   return (
     <div className="container">
+        <CollectNav/>
         <div className="row">
             <div className="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <div className="card mb-3">
