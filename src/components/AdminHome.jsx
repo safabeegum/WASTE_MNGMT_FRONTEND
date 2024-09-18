@@ -25,6 +25,46 @@ const AdminHome = () => {
             <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-md-4">
+                        <img src="https://img.freepik.com/free-vector/calculator-concept-illustration_114360-1259.jpg?t=st=1725478471~exp=1725482071~hmac=481f14226a8e5b098f196fdf431ef576f341878350d32d84407fd969a0ebf402&w=740" className="img-fluid rounded-start" alt="..."/>
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                        <br></br><br></br>
+                            <h5 className="card-title">VIEW WORKERS</h5>
+                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div className="row">
+        <div className="col col-12 col-sm-12 col-md-6">
+            <div className="card mb-3">
+                <div className="row g-0">
+                    <div className="col-md-4">
+                        <img src="https://img.freepik.com/free-vector/push-notifications-concept-illustration_114360-4986.jpg?t=st=1725479072~exp=1725482672~hmac=e912d535d535a31ac5594ff97da64f22ee24e5e0610fba9686b88c4e10c9941f&w=740" className="img-fluid rounded-start" alt="..."/>
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                        <br></br><br></br>
+                            <h5 className="card-title">ASSIGN TASKS</h5>
+                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div className="col col-12 col-sm-12 col-md-6">
+            <div className="card mb-3">
+                <div className="row g-0">
+                    <div className="col-md-4">
                         <img src="https://img.freepik.com/free-vector/preferences-concept-illustration_114360-1384.jpg?t=st=1725478982~exp=1725482582~hmac=93116ac20878e2441f894c35afce4a4d6d5cde4be7acfb838930d0acf06b3d91&w=740" className="img-fluid rounded-start" alt="..."/>
                     </div>
                     <div className="col-md-8">
