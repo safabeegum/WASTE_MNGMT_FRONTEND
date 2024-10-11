@@ -11,6 +11,7 @@ import AdminHome from './components/AdminHome';
 import CollectHome from './components/CollectHome';
 import AddCollector from './components/AddCollector';
 import ViewCollector from './components/ViewCollector';
+import UserFeedback from './components/UserFeedback';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path='/usersignin' element={<UserSignIn/>}/>
       <Route path='/usersignup' element={<UserSignUp/>}/>
       <Route path='/userhome' element={<UserHome/>}/>
+      <Route path='/userfeedback' element={<UserFeedback/>}/>
 
     </Routes>
     </BrowserRouter>
