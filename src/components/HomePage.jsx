@@ -9,7 +9,7 @@ const HomePage = () => {
           <div className="row">
             <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
             <div class="card border-light mb-3">
-            <img src="https://img.freepik.com/free-vector/people-recycling-concept_23-2148534658.jpg?t=st=1725382689~exp=1725386289~hmac=6643ae031df0e02ed044688f8da991481017246d98745375d9466c9309165780&w=1060" class="card-img-top" alt="..."></img>
+            <img src="https://static.vecteezy.com/system/resources/previews/029/269/306/original/waste-properly-and-correctly-illustration-with-demonstration-of-correct-garbage-sorting-and-proper-disposal-in-flat-cartoon-background-design-vector.jpg" class="card-img-top" alt="..."></img>
             <div class="card-body">
             </div>
             </div>
