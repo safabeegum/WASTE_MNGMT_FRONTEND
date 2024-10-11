@@ -54,8 +54,8 @@ const AdminHome = () => {
                     <div className="col-md-8">
                         <div className="card-body">
                         <br></br><br></br>
-                            <h5 className="card-title">ASSIGN TASKS</h5>
-                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            <h5 className="card-title">VIEW USERS</h5>
+                            <a href="/viewuser" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
                 </div>
