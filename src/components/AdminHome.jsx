@@ -34,7 +34,7 @@ const AdminHome = () => {
                         <div className="card-body">
                         <br></br><br></br>
                             <h5 className="card-title">VIEW WORKERS</h5>
-                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            <a href="/viewcollector" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
                 </div>
