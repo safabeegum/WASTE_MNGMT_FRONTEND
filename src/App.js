@@ -13,6 +13,7 @@ import AddCollector from './components/AddCollector';
 import ViewCollector from './components/ViewCollector';
 import UserFeedback from './components/UserFeedback';
 import ViewUser from './components/ViewUser';
+import ViewFeedback from './components/ViewFeedback';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/addcollector' element={<AddCollector/>}/>
       <Route path='/viewcollector' element={<ViewCollector/>}/>
       <Route path='/viewuser' element={<ViewUser/>}/>
+      <Route path='/viewfeedback' element={<ViewFeedback/>}/>
       <Route path='/collectsignin' element={<CollectSignIn/>}/>
       <Route path='/collecthome' element={<CollectHome/>}/>
       <Route path='/usersignin' element={<UserSignIn/>}/>

@@ -165,7 +165,7 @@ const AdminHome = () => {
                         <div className="card-body">
                         <br></br><br></br>
                             <h5 className="card-title">FEEDBACK DETAILS</h5>
-                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            <a href="/viewfeedback" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
                 </div>
