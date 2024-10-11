@@ -69,7 +69,7 @@ const UserHome = () => {
                             <div className="card-body">
                             <br></br><br></br>
                                 <h5 className="card-title">FEEDBACK</h5>
-                                <a href="/" className="btn btn-dark">CLICK HERE</a>
+                                <a href="/userfeedback" className="btn btn-dark">CLICK HERE</a>
                             </div>
                         </div>
                     </div>
