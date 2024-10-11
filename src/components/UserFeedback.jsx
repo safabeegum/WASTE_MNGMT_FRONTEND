@@ -1,12 +1,11 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import Nav from './Nav'
 import UserNav from './UserNav'
 
 const UserFeedback = () => {
 
     const [input,setInput]=useState(
-        {"feedback":"", "userId":sessionStorage.getItem("userId")}
+        {"feedback":"", "userId":sessionStorage.getItem("userId"), }
     )
 
     const inputHandler=(event) =>{
@@ -28,7 +27,7 @@ const UserFeedback = () => {
         (response) => {
               if (response.data.status=="Success") 
               {
-                alert("Posted Successfully!!!")
+                alert("Feedback Added Successfully!!!")
                 setInput({
                     "feedback": ""
                 });
@@ -55,15 +54,14 @@ const UserFeedback = () => {
                 <div class="card mb-3">
                     <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="..."/>
+                    <img src="https://cdn.botpenguin.com/assets/website/User_Feedback_d4677ac183.png" class="img-fluid rounded-start" alt="..."/>
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                    <h5 class="card-title text-warning  fs-3">Post Your Feedback!!!</h5>
-                    <textarea name="feedback" value={input.feedback} className="form-control" onChange={inputHandler}></textarea>
+                    <textarea name="feedback" placeholder ="Enter your Feedback!!!" value={input.feedback} rows="10" cols="50" className="form-control" onChange={inputHandler}></textarea>
                     <br></br>
                     <br></br>
-                    <button onClick={readValues} className="btn btn-warning">Submit your Feedback</button>
+                    <button onClick={readValues} className="btn btn-primary">Submit your Feedback</button>
                 </div>
                 </div>
                 </div>
