@@ -59,7 +59,7 @@ const AdminSignIn = () => {
           <div className="row">
             <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
             <div class="card border-light mb-3">
-            <img src="https://i.pinimg.com/736x/d1/54/66/d154660a6ae3104de2b0a314667a5ab6.jpg" class="card-img-top" alt="..."></img>
+            <img src="https://img.freepik.com/free-vector/privacy-policy-concept-illustration_114360-7853.jpg" class="card-img-top" alt="..."></img>
             <div class="card-body">
             </div>
             </div>
