@@ -59,7 +59,7 @@ const CollectSignIn = () => {
           <div className="row">
             <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
             <div class="card border-light mb-3">
-            <img src="https://img.freepik.com/free-vector/forgot-password-concept-illustration_114360-1123.jpg?t=st=1725446364~exp=1725449964~hmac=b3e79e458d7f30571e2e8a04cccc86ba38e2293d1ca5eb7aeca52676d5b7cda7&w=740" class="card-img-top" alt="..."></img>
+            <img src="https://img.freepik.com/free-vector/forgot-password-concept-illustration_114360-1123.jpg?t=st=1728673602~exp=1728677202~hmac=2abddfd2aea688ac9b3e29762f2896456e3f8a78c57c0fe513897db21f5c2581&w=740" class="card-img-top" alt="..."></img>
             <div class="card-body">
             </div>
             </div>

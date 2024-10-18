@@ -135,7 +135,7 @@ const UserSignUp = () => {
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-6 col-6 col-xl-6 col-xxl-6">
                         <div className="card border-light mb-3">
-                            <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7965.jpg?t=st=1725445489~exp=1725449089~hmac=07e4cedd0a99d554cb4e1ee8e9a81188156264c7d51aaed6d9b0915f8c457978&w=740" className="card-img-top" alt="..."></img>
+                            <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7965.jpg?t=st=1728673549~exp=1728677149~hmac=2eaba6ea0d03fa1b772586b23d7adf285866e3e1f24b6e2cbcb6d2d58adec9d0&w=740" className="card-img-top" alt="..."></img>
                         </div>
                     </div>
 

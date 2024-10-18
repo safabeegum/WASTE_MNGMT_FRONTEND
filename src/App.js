@@ -14,6 +14,7 @@ import ViewCollector from './components/ViewCollector';
 import UserFeedback from './components/UserFeedback';
 import ViewUser from './components/ViewUser';
 import ViewFeedback from './components/ViewFeedback';
+import AddRequest from './components/AddRequest';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path='/usersignup' element={<UserSignUp/>}/>
       <Route path='/userhome' element={<UserHome/>}/>
       <Route path='/userfeedback' element={<UserFeedback/>}/>
+      <Route path='/addrequest' element={<AddRequest/>}/>
 
     </Routes>
     </BrowserRouter>
