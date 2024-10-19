@@ -93,7 +93,7 @@ const AdminHome = () => {
                         <div className="card-body">
                         <br></br><br></br>
                             <h5 className="card-title">ASSIGN TASKS</h5>
-                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            <a href="/requesttable" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
                 </div>
