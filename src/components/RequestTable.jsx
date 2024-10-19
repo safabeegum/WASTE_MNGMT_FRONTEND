@@ -25,6 +25,7 @@ const RequestTable = () => {
       });
   };
 
+  
   useEffect(() => {
     fetchData();
   }, []);
@@ -46,7 +47,7 @@ const RequestTable = () => {
                   <th scope="col">ADDRESS</th>
                   <th scope="col">EMAIL</th>
                   <th scope="col">QUANTITY</th>
-                  <th scope="col">ADDITIONAL INFORMATION</th>
+                  <th scope="col">ADDITIONAL NOTE</th>
                   <th scope="col">POSTED DATE</th>
                   <th scope="col">ACCEPT</th>
                   <th scope="col">REJECT</th>
@@ -74,4 +75,4 @@ const RequestTable = () => {
   );
 };
 
-export default RequestTable;
+export default RequestTable
