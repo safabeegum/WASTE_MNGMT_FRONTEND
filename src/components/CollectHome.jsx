@@ -10,7 +10,7 @@ const CollectHome = () => {
                 <div className="card mb-3">
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://img.freepik.com/free-vector/push-notifications-concept-illustration_114360-4986.jpg?t=st=1725479072~exp=1725482672~hmac=e912d535d535a31ac5594ff97da64f22ee24e5e0610fba9686b88c4e10c9941f&w=740" className="img-fluid rounded-start" alt="..."/>
+                            <img src="https://img.freepik.com/free-vector/add-tasks-concept-illustration_114360-4875.jpg?t=st=1729276566~exp=1729280166~hmac=058c4e5cd496443aa62ef0cd3c3a784c30e9fe67dda62f3f629eb16ee32d49f4&w=740" className="img-fluid rounded-start" alt="..."/>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">

@@ -28,7 +28,7 @@ const AdminHome = () => {
             <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-md-4">
-                        <img src="https://img.freepik.com/free-vector/calculator-concept-illustration_114360-1259.jpg?t=st=1725478471~exp=1725482071~hmac=481f14226a8e5b098f196fdf431ef576f341878350d32d84407fd969a0ebf402&w=740" className="img-fluid rounded-start" alt="..."/>
+                        <img src="https://img.freepik.com/free-vector/personal-site-concept-illustration_114360-2577.jpg?t=st=1729276310~exp=1729279910~hmac=8fb6ade01e87982c69d5d5b81c5316fe284cf0e87416452d3c0baf06b0ae567a&w=740" className="img-fluid rounded-start" alt="..."/>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
@@ -42,14 +42,14 @@ const AdminHome = () => {
         </div>
     </div>
 
-
+    
 
         <div className="row">
         <div className="col col-12 col-sm-12 col-md-6">
             <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-md-4">
-                        <img src="https://img.freepik.com/free-vector/push-notifications-concept-illustration_114360-4986.jpg?t=st=1725479072~exp=1725482672~hmac=e912d535d535a31ac5594ff97da64f22ee24e5e0610fba9686b88c4e10c9941f&w=740" className="img-fluid rounded-start" alt="..."/>
+                        <img src="https://img.freepik.com/free-vector/profile-data-concept-illustration_114360-2770.jpg?t=st=1729276596~exp=1729280196~hmac=5a37758b140e2f5c9e331ec26a11fff85f827d0f6e43613e6762faadc52f5cc1&w=740" className="img-fluid rounded-start" alt="..."/>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
@@ -74,7 +74,7 @@ const AdminHome = () => {
                         <div className="card-body">
                         <br></br><br></br>
                             <h5 className="card-title">VIEW REQUESTS</h5>
-                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            <a href="/viewrequest" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ const AdminHome = () => {
                     <div className="col-md-8">
                         <div className="card-body">
                         <br></br><br></br>
-                            <h5 className="card-title">GENERATE RECEIPTS</h5>
+                            <h5 className="card-title">GENERATE INVOICE</h5>
                             <a href="/" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
