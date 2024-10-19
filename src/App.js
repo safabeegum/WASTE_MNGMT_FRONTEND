@@ -17,6 +17,7 @@ import ViewFeedback from './components/ViewFeedback';
 import AddRequest from './components/AddRequest';
 import ViewRequest from './components/ViewRequest';
 import RequestTable from './components/RequestTable';
+import AssignTask from './components/AssignTask';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <Route path='/addrequest' element={<AddRequest/>}/>
       <Route path='/viewrequest' element={<ViewRequest/>}/>
       <Route path='/requesttable' element={<RequestTable/>}/>
+      <Route path='/assigntask' element={<AssignTask/>}/>
 
     </Routes>
     </BrowserRouter>
