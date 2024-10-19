@@ -2,11 +2,11 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import AdminNav from './AdminNav';
 
-const ViewFeedback = () => {
+const ViewRequest = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    axios.post('http://localhost:8080/viewfeedback',
+    axios.post('http://localhost:8080/viewrequest',
         {},
         {
           headers: { token: sessionStorage.getItem('token'), 'Content-Type': 'application/json' },
@@ -38,17 +38,21 @@ const ViewFeedback = () => {
                   <div key={index} className="card mb-3">
                     <div className="row g-0">
                       <div className="col-md-1">
-                        <img
-                          src="https://img.freepik.com/free-vector/emotional-feedback-concept-illustration_114360-17635.jpg?t=st=1728671794~exp=1728675394~hmac=02c1eaa922b1443eb44ede63b16fec9d9ee32faca946f5cb9f4ee213f1b9ddce&w=740"
-                          className="img-fluid rounded-start" width="200px"
-                          alt="Feedback Illustration"
-                        />
+                      <div style={{ display: 'flex', alignItems: 'flex-start', paddingTop: '30px' }}>
+                        <img src="https://img.freepik.com/free-vector/blue-notification-bell-with-one-notification_78370-6899.jpg"
+                        className="img-fluid rounded-start" alt="Request Illustration" />
+                    </div>
+
                       </div>
                       <div className="col-md-8">
                         <div className="card-body">
-                          <h5 className="card-title">{value.feedback}</h5>
-                          <p className="card-text">
-                            <small className="text-body-secondary">Feedback by {value.email} On {value.postedDate}</small>
+                        <p className="card-text">
+                            <small className="text-body-secondary">Requested By: {value.email}</small><br></br>
+                            <small className="text-body-secondary">Name: {value.first_name} {value.last_name}</small><br></br>
+                            <small className="text-body-secondary">Address: {value.address}</small><br></br>
+                            <small className="text-body-secondary">Quantity: {value.quantity}</small><br></br>
+                            <small className="text-body-secondary">Additional Note: {value.addinfo}</small><br></br>
+                            <small className="text-body-secondary">Requested On: {value.postedDate}</small>
                           </p>
                         </div>
                       </div>
@@ -64,4 +68,4 @@ const ViewFeedback = () => {
   );
 };
 
-export default ViewFeedback;
+export default ViewRequest 

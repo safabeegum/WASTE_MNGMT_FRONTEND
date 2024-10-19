@@ -15,6 +15,7 @@ import UserFeedback from './components/UserFeedback';
 import ViewUser from './components/ViewUser';
 import ViewFeedback from './components/ViewFeedback';
 import AddRequest from './components/AddRequest';
+import ViewRequest from './components/ViewRequest';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Route path='/userhome' element={<UserHome/>}/>
       <Route path='/userfeedback' element={<UserFeedback/>}/>
       <Route path='/addrequest' element={<AddRequest/>}/>
+      <Route path='/viewrequest' element={<ViewRequest/>}/>
 
     </Routes>
     </BrowserRouter>

@@ -10,7 +10,7 @@ const UserHome = () => {
                 <div className="card mb-3">
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src="https://img.freepik.com/free-vector/preferences-concept-illustration_114360-1384.jpg?t=st=1725478982~exp=1725482582~hmac=93116ac20878e2441f894c35afce4a4d6d5cde4be7acfb838930d0acf06b3d91&w=740" className="img-fluid rounded-start" alt="..."/>
+                            <img src="https://img.freepik.com/free-vector/list-concept-illustration_114360-1320.jpg?t=st=1729277470~exp=1729281070~hmac=d324013fc164cf7d8a1f538a0b9adcc5106976761dfd3efa0dc486e53a0f8e0a&w=740" className="img-fluid rounded-start" alt="..."/>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
