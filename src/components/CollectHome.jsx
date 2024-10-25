@@ -16,7 +16,7 @@ const CollectHome = () => {
                             <div className="card-body">
                                 <br></br><br></br>
                                 <h5 className="card-title">VIEW TASKS</h5>
-                                <a href="/" className="btn btn-dark">CLICK HERE</a>
+                                <a href="/viewtask" className="btn btn-dark">CLICK HERE</a>
                             </div>
                         </div>
                     </div>

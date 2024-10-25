@@ -17,7 +17,9 @@ import ViewFeedback from './components/ViewFeedback';
 import AddRequest from './components/AddRequest';
 import ViewRequest from './components/ViewRequest';
 import RequestTable from './components/RequestTable';
-import AssignTask from './components/AssignTask';
+import AssignTask from './components/AdminDashboard';
+import ViewTask from './components/ViewTask';
+import AdminDashboard from './components/AdminDashboard';
 
 function App() {
   return (
@@ -39,8 +41,12 @@ function App() {
       <Route path='/userfeedback' element={<UserFeedback/>}/>
       <Route path='/addrequest' element={<AddRequest/>}/>
       <Route path='/viewrequest' element={<ViewRequest/>}/>
-      <Route path='/requesttable' element={<RequestTable/>}/>
+      {/* <Route path='/requesttable' element={<RequestTable/>}/> */}
       <Route path='/assigntask' element={<AssignTask/>}/>
+      <Route path='/viewtask' element={<ViewTask/>}/>
+      <Route path="/admin" element={<AdminDashboard />} />
+      
+      
 
     </Routes>
     </BrowserRouter>
