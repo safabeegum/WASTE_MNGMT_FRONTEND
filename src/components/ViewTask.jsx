@@ -1,12 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import AdminNav from './AdminNav';
+import CollectNav from './CollectNav';
 
-const ViewRequest = () => {
+const ViewTask = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    axios.post('http://localhost:8080/viewrequest',
+    axios.post('http://localhost:8080/viewtask',
         {},
         {
           headers: { token: sessionStorage.getItem('token'), 'Content-Type': 'application/json' },
@@ -28,7 +28,7 @@ const ViewRequest = () => {
 
   return (
     <div>
-      <AdminNav />
+      <CollectNav/>
       <div className="container">
         <div className="row">
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -47,11 +47,12 @@ const ViewRequest = () => {
                       <div className="col-md-8">
                         <div className="card-body">
                         <p className="card-text">
-                          <small className="text-body-secondary"><strong>PickupID: {value.pickupId}</strong></small><br></br>
                             <small className="text-body-secondary">Requested By: {value.email}</small><br></br>
-                            <small className="text-body-secondary">Name: {value.first_name} {value.last_name}</small><br></br>
+                            <small className="text-body-secondary">Name: {value.first_name}</small><br></br>
                             <small className="text-body-secondary">Address: {value.address}</small><br></br>
-                            <small className="text-body-secondary">Requested On: {value.requestedDate}</small>
+                            <small className="text-body-secondary">Pickup On: {value.date}</small><br></br>
+                            <small className="text-body-secondary">Pickup At: {value.time}</small><br></br>
+                            <small className="text-body-secondary">Additional Note: {value.addinfo}</small>
                           </p>
                         </div>
                       </div>
@@ -67,4 +68,4 @@ const ViewRequest = () => {
   );
 };
 
-export default ViewRequest 
+export default ViewTask 

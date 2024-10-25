@@ -1,78 +1,106 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import AdminNav from './AdminNav';
+// import React, { useEffect, useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import axios from 'axios';
+// import AdminNav from './AdminNav';
 
-const RequestTable = () => {
-  const [data, setData] = useState([]);
-  const navigate = useNavigate(); 
+// const RequestTable = () => {
+//   const [data, setData] = useState([]);  // State to hold fetched data
+//   const [loading, setLoading] = useState(true);  // To show loading status
+//   const [error, setError] = useState(null);  // To capture and show any error
 
-  const fetchData = () => {
-    axios
-      .post(
-        'http://localhost:8080/requesttable',
-        {},
-        {
-          headers: { token: sessionStorage.getItem('token'), 'Content-Type': 'application/json' },
-        }
-      )
-      .then((response) => {
-        console.log(response.data);
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+//   // Function to fetch data from the API
+//   const fetchData = () => {
+//     axios
+//       .post(
+//         'http://localhost:8080/requesttable',
+//         {}, // Empty body since you're using POST without data
+//         {
+//           headers: {
+//             token: sessionStorage.getItem('token'),  // Pass the token for authentication
+//             'Content-Type': 'application/json',
+//           },
+//         }
+//       )
+//       .then((response) => {
+//         console.log(response.data);
+//         setData(response.data);  // Set data in the state
+//         setLoading(false);  // Disable loading
+//       })
+//       .catch((error) => {
+//         console.error("API Error:", error); // Log the error
+//         setError('Failed to fetch data: ' + (error.response?.data?.message || error.message)); // Set error message
+//         setLoading(false);  // Disable loading
+//       });
+//   };
 
-  
-  useEffect(() => {
-    fetchData();
-  }, []);
+//   // Fetch the data when the component mounts
+//   useEffect(() => {
+//     fetchData();
+//   }, []);
 
-  const handleAccept = (user) => {
-    navigate('/assigntask', { state: { userDetails: user, userId: user._id } }); // Navigate with user details and user ID
-  };
+//   // Render loading or error state
+//   if (loading) {
+//     return <div>Loading...</div>;
+//   }
 
-  return (
-    <div>
-      <AdminNav/>
-      <div className="container">
-        <div className="row">
-          <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th scope="col">NAME</th>
-                  <th scope="col">ADDRESS</th>
-                  <th scope="col">EMAIL</th>
-                  <th scope="col">QUANTITY</th>
-                  <th scope="col">ADDITIONAL NOTE</th>
-                  <th scope="col">POSTED DATE</th>
-                  <th scope="col">ACCEPT</th>
-                  <th scope="col">REJECT</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((value, index) => (
-                  <tr key={index}>
-                    <td>{value.first_name}</td>
-                    <td>{value.address}</td>
-                    <td>{value.email}</td>
-                    <td>{value.quantity}</td>
-                    <td>{value.addinfo}</td>
-                    <td>{value.postedDate}</td>
-                    <td><button className="btn btn-success ms-2" onClick={() => handleAccept(value)}>ACCEPT</button></td>
-                    <td><button className="btn btn-danger ms-2">REJECT</button></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//   if (error) {
+//     return <div>{error}</div>;
+//   }
 
-export default RequestTable
+//   return (
+//     <div>
+//       <AdminNav /> {/* Admin navigation component */}
+//       <div className="container">
+//         <div className="row">
+//           <div className="col col-12">
+//             <table className="table">
+//               <thead>
+//                 <tr>
+//                   <th scope="col">PICKUP ID</th>
+//                   <th scope="col">USER ID</th>
+//                   <th scope="col">ADDRESS</th>
+//                   <th scope="col">POSTED DATE</th>
+//                   <th scope="col">ACCEPT</th>
+//                   <th scope="col">REJECT</th>
+//                 </tr>
+//               </thead>
+//               <tbody>
+//                 {data.map((value, index) => (
+//                   <tr key={index}>
+//                     <td><strong>{value.pickupId}</strong></td>
+//                     <td>{value.userId}</td>
+//                     <td>{value.address}</td>
+//                     <td>{new Date(value.postedDate).toLocaleDateString()}</td> {/* Format the date */}
+//                     {/* Accept button with link */}
+//                     <td>
+//                       <Link
+//                         to={{
+//                           pathname: `/assigntask/${value.pickupId}/${value.userId}`, // Pass pickup ID in the URL path
+//                           state: {
+//                             userId: value.userId,  // Passing userId in the state
+//                             pickupId: value.pickupId,  // Passing pickupId
+//                             address: value.address,
+//                             postedDate: value.postedDate,
+//                           },
+//                         }}
+//                         className="btn btn-success"
+//                       >
+//                         Accept
+//                       </Link>
+//                     </td>
+//                     {/* Reject button (if you plan to implement it) */}
+//                     <td>
+//                       <button className="btn btn-danger">Reject</button>
+//                     </td>
+//                   </tr>
+//                 ))}
+//               </tbody>
+//             </table>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default RequestTable;
