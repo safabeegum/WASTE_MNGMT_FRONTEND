@@ -81,7 +81,7 @@ const AddRequest = () => {
                                 <div className="col-md-8">
                                     <div className="card-body">
                                         {/* Display user's address */}
-                                        <p><strong>User Address:</strong> {input.address}</p>
+                                        <p><strong>Pickup Address:</strong> {input.address}</p>
                                         <button onClick={readValues} className="btn btn-warning">Request Waste Pickup</button>
                                     </div>
                                 </div>
