@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import UserSignUp from './components/UserSignUp';
 import UserSignIn from './components/UserSignIn';
@@ -20,12 +19,15 @@ import RequestTable from './components/RequestTable';
 import AssignTask from './components/AdminDashboard';
 import ViewTask from './components/ViewTask';
 import AdminDashboard from './components/AdminDashboard';
+import MapComponent from './components/MapComponent';
+
 
 function App() {
   return (
     <BrowserRouter>
 
     <Routes>
+      
       <Route path='/' element={<HomePage/>}/>
       <Route path='/adminsignin' element={<AdminSignIn/>}/>
       <Route path='/adminhome' element={<AdminHome/>}/>
@@ -45,6 +47,8 @@ function App() {
       <Route path='/assigntask' element={<AssignTask/>}/>
       <Route path='/viewtask' element={<ViewTask/>}/>
       <Route path="/admin" element={<AdminDashboard />} />
+      <Route path='/map' element={<MapComponent />} />
+
       
       
 
