@@ -15,11 +15,16 @@ import ViewUser from './components/ViewUser';
 import ViewFeedback from './components/ViewFeedback';
 import AddRequest from './components/AddRequest';
 import ViewRequest from './components/ViewRequest';
-import RequestTable from './components/RequestTable';
 import AssignTask from './components/AdminDashboard';
 import ViewTask from './components/ViewTask';
 import AdminDashboard from './components/AdminDashboard';
 import MapComponent from './components/MapComponent';
+import Notifications from './components/Notifications';
+import TransactionForm from './components/TransactionForm';
+import InvoiceList from './components/InvoiceList';
+import AdminPaymentTable from './components/AdminPaymentTable';
+
+
 
 
 function App() {
@@ -48,6 +53,10 @@ function App() {
       <Route path='/viewtask' element={<ViewTask/>}/>
       <Route path="/admin" element={<AdminDashboard />} />
       <Route path='/map' element={<MapComponent />} />
+      <Route path="/notifications" element={<Notifications />} />
+      <Route path="/transactionform" element={<TransactionForm />} />
+      <Route path="/invoicelist" element={<InvoiceList />} />
+      <Route path="/adminpaymenttable" element={<AdminPaymentTable />} />
 
       
       
