@@ -110,7 +110,7 @@ const AdminHome = () => {
                         <div className="card-body">
                         <br></br><br></br>
                             <h5 className="card-title">PAYMENT DETAILS</h5>
-                            <a href="/" className="btn btn-dark">CLICK HERE</a>
+                            <a href="/adminpaymenttable" className="btn btn-dark">CLICK HERE</a>
                         </div>
                     </div>
                 </div>
@@ -118,8 +118,8 @@ const AdminHome = () => {
         </div>
     </div>
 
-    <div className="row">
-        <div className="col col-12 col-sm-12 col-md-6">
+    
+        {/* <div className="col col-12 col-sm-12 col-md-6">
             <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-md-4">
@@ -134,8 +134,9 @@ const AdminHome = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         
+        <div className="row">
         <div className="col col-12 col-sm-12 col-md-6">
             <div className="card mb-3">
                 <div className="row g-0">
@@ -152,9 +153,9 @@ const AdminHome = () => {
                 </div>
             </div>
         </div>
-    </div>
+    
 
-    <div className="row">
+    
         <div className="col col-12 col-sm-12 col-md-6">
             <div className="card mb-3">
                 <div className="row g-0">

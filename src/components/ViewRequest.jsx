@@ -14,8 +14,9 @@ const ViewRequest = () => {
     )
     .then((response) => {
       console.log(response.data);
-      // Ensure data is always an array
-      setData(Array.isArray(response.data) ? response.data : []);
+      // Ensure data is always an array and sort by requestedDate
+      const sortedData = Array.isArray(response.data) ? response.data.sort((a, b) => new Date(b.requestedDate) - new Date(a.requestedDate)) : [];
+      setData(sortedData);
     })
     .catch((error) => {
       console.log(error);
@@ -51,7 +52,7 @@ const ViewRequest = () => {
                             <small className="text-body-secondary">Name: {value.first_name} {value.last_name}</small><br></br>
                             <small className="text-body-secondary">Address: {value.address}</small><br></br>
                             <small className="text-body-secondary">Requested On: {value.requestedDate}</small><br></br>
-                            <small className="text-body-secondary">Location: Latitude {value.latitude}, Longitude {value.longitude}</small> {/* Display latitude and longitude */}
+                            <small className="text-body-secondary">Location: Latitude {value.latitude}, Longitude {value.longitude}</small>
                           </p>
                         </div>
                       </div>
