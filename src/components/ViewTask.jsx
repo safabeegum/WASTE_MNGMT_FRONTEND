@@ -1,28 +1,38 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import CollectNav from './CollectNav';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 const ViewTask = () => {
   const [data, setData] = useState([]);
+  const [mapVisible, setMapVisible] = useState({}); // State to track map visibility for each task
 
   const fetchData = () => {
     axios.post('http://localhost:8080/viewtask',
-        {},
-        {
-          headers: { token: sessionStorage.getItem('token'), 'Content-Type': 'application/json' },
-        }
-      )
-      .then((response) => {
-        setData(Array.isArray(response.data) ? response.data : []);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      {},
+      {
+        headers: { token: sessionStorage.getItem('token'), 'Content-Type': 'application/json' },
+      }
+    )
+    .then((response) => {
+      setData(Array.isArray(response.data) ? response.data : []);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   };
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  const toggleMapVisibility = (index) => {
+    setMapVisible((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   return (
     <div>
@@ -55,6 +65,27 @@ const ViewTask = () => {
                             <small className="text-body-secondary"><strong>Location:</strong> {value.latitude}, {value.longitude}</small><br />
                             <small className="text-body-secondary"><strong>Assigned Worker:</strong> {value.workerName}</small><br />
                           </p>
+                          {/* Button to toggle map visibility */}
+                          <button 
+                            className="btn btn-primary" 
+                            onClick={() => toggleMapVisibility(index)}
+                          >
+                            {mapVisible[index] ? 'Hide Map' : 'Show Map'}
+                          </button>
+                          {/* Leaflet map displaying the location */}
+                          {mapVisible[index] && value.latitude && value.longitude && (
+                            <MapContainer center={[value.latitude, value.longitude]} zoom={13} style={{ height: "200px", width: "100%", marginTop: '10px' }}>
+                              <TileLayer
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
+                              />
+                              <Marker position={[value.latitude, value.longitude]}>
+                                <Popup>
+                                  <strong>Assigned Worker:</strong> {value.workerName}
+                                </Popup>
+                              </Marker>
+                            </MapContainer>
+                          )}
                         </div>
                       </div>
                     </div>
