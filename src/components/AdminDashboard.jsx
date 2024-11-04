@@ -1,4 +1,3 @@
-// AdminDashboard.js
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import AdminNav from './AdminNav';
@@ -37,6 +36,12 @@ const AdminDashboard = () => {
 
     const assignWorker = async (requestId) => {
         const { workerId, assignedDate, assignedTime } = assignments[requestId];
+
+        // Ensure all fields are filled
+        if (!workerId || !assignedDate || !assignedTime) {
+            alert("Please fill all assignment details.");
+            return;
+        }
 
         try {
             const response = await axios.post(`http://localhost:8080/assigntask/${requestId}`, {
