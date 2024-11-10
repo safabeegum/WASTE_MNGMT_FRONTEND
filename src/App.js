@@ -16,13 +16,19 @@ import ViewFeedback from './components/ViewFeedback';
 import AddRequest from './components/AddRequest';
 import ViewRequest from './components/ViewRequest';
 import AssignTask from './components/AdminDashboard';
-import ViewTask from './components/ViewTask';
+// import ViewTask from './components/ViewTask';
 import AdminDashboard from './components/AdminDashboard';
 import MapComponent from './components/MapComponent';
 import Notifications from './components/Notifications';
 import TransactionForm from './components/TransactionForm';
 import InvoiceList from './components/InvoiceList';
+
+
+import ViewTasks from './components/ViewTasks';
+import CollectNav from './components/CollectNav';
 import AdminPaymentTable from './components/AdminPaymentTable';
+import WorkerTasks from './components/WorkerTasks';
+import ConfirmTask from './components/ConfirmTask';
 
 
 
@@ -42,6 +48,7 @@ function App() {
       <Route path='/viewfeedback' element={<ViewFeedback/>}/>
       <Route path='/collectsignin' element={<CollectSignIn/>}/>
       <Route path='/collecthome' element={<CollectHome/>}/>
+      <Route path='/collecnav' element={<CollectNav/>}/>
       <Route path='/usersignin' element={<UserSignIn/>}/>
       <Route path='/usersignup' element={<UserSignUp/>}/>
       <Route path='/userhome' element={<UserHome/>}/>
@@ -50,13 +57,16 @@ function App() {
       <Route path='/viewrequest' element={<ViewRequest/>}/>
       {/* <Route path='/requesttable' element={<RequestTable/>}/> */}
       <Route path='/assigntask' element={<AssignTask/>}/>
-      <Route path='/viewtask' element={<ViewTask/>}/>
+      <Route path='/viewtask' element={<ViewTasks/>}/>
       <Route path="/admin" element={<AdminDashboard />} />
       <Route path='/map' element={<MapComponent />} />
       <Route path="/notifications" element={<Notifications />} />
       <Route path="/transactionform" element={<TransactionForm />} />
       <Route path="/invoicelist" element={<InvoiceList />} />
       <Route path="/adminpaymenttable" element={<AdminPaymentTable />} />
+      <Route path="/getWorkerTasks" element={<WorkerTasks />} />
+      <Route path="/confirmtasks" element={<ConfirmTask />} />
+      {/* <Route path="/workerdashboard" element={<WorkerDashboard />} /> */}
 
       
       
